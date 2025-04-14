@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Transformasi Bisnis dengan IoT & AI</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #f0f4f8, #d9e2ec);
+      color: #2c3e50;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 50px auto;
+      background: #ffffff;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      position: relative;
+    }
+
+    nav {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #1a73e8;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    h1, h2 {
+      text-align: center;
+      color: #1a73e8;
+    }
+
+    h1 {
+      font-size: 36px;
+      font-weight: 600;
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      font-size: 24px;
+      margin-top: 30px;
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.8;
+      text-align: justify;
+      margin-bottom: 20px;
+    }
+
+    a {
+      color: #1a73e8;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .cta-button {
+      display: inline-block;
+      background: #1a73e8;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 10px;
+      transition: background 0.3s ease, transform 0.3s ease;
+    }
+
+    .cta-button:hover {
+      background: #0c5dc0;
+      transform: translateY(-3px);
+    }
+
+    .footer {
+      margin-top: 30px;
+      text-align: center;
+      font-size: 14px;
+      color: #777;
+    }
+
+    .section {
+      display: none;
+    }
+
+    .active {
+      display: block;
+    }
+
+    .identitas-icon {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: #1a73e8;
+      color: white;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .identitas-icon:hover {
+      transform: rotate(10deg);
+    }
+
+    .identitas {
+      display: none;
+      position: absolute;
+      top: 70px;
+      right: 20px;
+      background: #1a73e8;
+      color: white;
+      padding: 15px 20px;
+      border-radius: 12px;
+      font-size: 14px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+      z-index: 10;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        margin: 20px;
+        padding: 20px;
+      }
+      h1 {
+        font-size: 28px;
+      }
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+      .identitas {
+        right: 10px;
+        top: 60px;
+      }
+      .identitas-icon {
+        right: 10px;
+        top: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <div class="identitas-icon" onclick="toggleIdentitas()">📋</div>
+    <div class="identitas" id="identitasData">
+      Kelas: TI 24A4<br />
+      Nama: Muhammad Lutfi<br />
+      NIM: 240103141
+    </div>
+
+    <nav>
+      <a onclick="showSection('beranda')">Beranda</a>
+      <a onclick="showSection('materi')">Materi</a>
+      <a onclick="showSection('tentang')">Tentang</a>
+    </nav>
+
+    <div id="beranda" class="section active">
+      <h1>Transformasi Bisnis Melalui IoT dan AI</h1>
+      <p>
+        Dunia bisnis kini menghadapi tantangan besar di era digital, di mana data menjadi salah satu aset paling berharga. Melalui Internet of Things (IoT), perangkat dapat saling terhubung untuk mengumpulkan data secara real-time, sementara Artificial Intelligence (AI) berperan dalam menganalisis dan memberikan rekomendasi berbasis kecerdasan buatan.
+      </p>
+      <p>
+        Transformasi digital tidak hanya mempercepat proses pengambilan keputusan, namun juga menciptakan efisiensi dan membuka peluang inovasi baru dalam berbagai sektor.
+      </p>
+      <p>
+        Seminar ini membahas strategi menghadapi era bisnis berbasis data dan teknologi, dengan contoh penerapan IoT dan AI di industri nyata.
+      </p>
+    </div>
+
+    <div id="materi" class="section">
+      <h1>Materi Seminar IoT & AI</h1>
+      <p><strong>1.</strong> Internet of Things (IoT) adalah konsep di mana berbagai perangkat fisik seperti sensor, alat elektronik, kendaraan, hingga mesin industri saling terhubung ke internet untuk mengumpulkan, mengirim, dan menerima data secara otomatis. Dengan IoT, bisnis dapat memantau kondisi operasional secara real-time tanpa harus melakukan pengawasan manual, sehingga efisiensi dan ketepatan keputusan bisa meningkat drastis.</p>
+      <p><strong>2.</strong> Sementara itu, Artificial Intelligence (AI) adalah teknologi yang memungkinkan sistem komputer untuk meniru kecerdasan manusia, mulai dari pengenalan pola, pengambilan keputusan, sampai pembelajaran mandiri. AI memungkinkan perusahaan mengolah data yang dihasilkan IoT menjadi informasi yang bermakna, seperti prediksi kebutuhan stok barang, analisis perilaku pelanggan, hingga perawatan mesin secara otomatis.</p>
+      <p><strong>3.</strong> Kombinasi antara IoT dan AI memberikan dampak luar biasa bagi dunia bisnis. Tidak hanya mengumpulkan data, sistem yang terintegrasi mampu memberikan solusi cerdas yang mempercepat inovasi produk, meminimalkan kesalahan manusia, hingga menciptakan layanan pelanggan yang lebih personal dan relevan berdasarkan data yang dianalisis oleh AI.</p>
+      <p><strong>4.</strong> Salah satu studi kasus yang banyak dipelajari adalah bagaimana perusahaan manufaktur menggunakan sensor IoT untuk memonitor kondisi mesin produksi secara real-time, dan AI digunakan untuk memprediksi kapan mesin perlu perawatan sebelum terjadi kerusakan. Dengan sistem ini, downtime bisa ditekan dan biaya produksi menjadi lebih efisien.</p>
+      <p><strong>5.</strong> Selain untuk perusahaan besar, teknologi IoT dan AI juga sangat bermanfaat untuk skala Usaha Mikro Kecil Menengah (UMKM). Misalnya, toko online dapat memanfaatkan AI untuk menganalisis kebiasaan belanja konsumen, sehingga bisa merekomendasikan produk yang relevan. IoT bisa digunakan untuk memantau stok barang di gudang dan secara otomatis memberikan peringatan jika stok menipis.</p>
+      <p><strong>6.</strong> Penggunaan teknologi ini juga membuka peluang kerja dan menciptakan model bisnis baru. Banyak perusahaan startup lahir berkat kombinasi IoT dan AI, dari layanan transportasi berbasis aplikasi, sistem pertanian pintar, hingga smart city yang memanfaatkan sensor dan AI untuk mengatur lalu lintas dan keamanan lingkungan secara otomatis.</p>
+      <p><strong>7.</strong> Seminar ini bertujuan agar peserta memiliki pemahaman mendalam mengenai manfaat serta tantangan dalam penerapan IoT dan AI. Peserta juga didorong untuk memiliki pemikiran kritis dan kreatif dalam merancang solusi berbasis teknologi, baik dalam skala bisnis kecil maupun besar.</p>
+      <p>Untuk mendalami materi ini, silakan unduh dokumen lengkapnya melalui tautan berikut:</p>
+      <a class="cta-button" href="https://s.id/BahanRangkuman" target="_blank">Download Materi Lengkap</a>
+    </div>
+
+    <div id="tentang" class="section">
+      <h1>Tentang Seminar</h1>
+      <p>
+        Seminar ini diselenggarakan oleh Universitas Duta Bangsa sebagai upaya membekali mahasiswa dan masyarakat umum mengenai pentingnya pemanfaatan teknologi Internet of Things (IoT) dan Artificial Intelligence (AI) dalam pengembangan bisnis masa depan.
+      </p>
+      <p>
+        Narasumber dari industri teknologi dan akademisi akan berbagi pengalaman serta strategi dalam memanfaatkan IoT dan AI sebagai alat bantu pengambilan keputusan dan pengembangan produk.
+      </p>
+      <p>
+        Acara ini bertujuan mempersiapkan peserta menghadapi transformasi digital yang semakin cepat dan dinamis di era revolusi industri 4.0.
+      </p>
+    </div>
+
+    <div class="footer">
+      &copy; 2025 Pemrograman Web 1 - Universitas Duta Bangsa<br>
+      📧 info@dutabangsacampus.ac.id | 🌐 www.dutabangsacampus.ac.id<br>
+      <span id="clock"></span>
+    </div>
+  </div>
+
+  <script>
+    function showSection(sectionId) {
+      const sections = document.querySelectorAll('.section');
+      sections.forEach(section => section.classList.remove('active'));
+      document.getElementById(sectionId).classList.add('active');
+    }
+
+    function toggleIdentitas() {
+      const identitas = document.getElementById('identitasData');
+      identitas.style.display = identitas.style.display === 'block' ? 'none' : 'block';
+    }
+
+    function updateClock() {
+      const now = new Date();
+      document.getElementById('clock').innerHTML = now.toLocaleTimeString();
+    }
+    setInterval(updateClock, 1000);
+    updateClock();
+  </script>
+</body>
+</html>
